@@ -20,7 +20,16 @@ const state = {
         { key: 2, value: '/exam/question/edit/multipleChoice', name: '多选题' },
         { key: 3, value: '/exam/question/edit/trueFalse', name: '判断题' },
         { key: 4, value: '/exam/question/edit/gapFilling', name: '填空题' },
-        { key: 5, value: '/exam/question/edit/shortAnswer', name: '简答题' }]
+        { key: 5, value: '/exam/question/edit/shortAnswer', name: '简答题' }],
+      answer: {
+        doRightTag: [{ key: true, value: 'success' }, { key: false, value: 'danger' }, { key: null, value: 'warning' }],
+        doRightEnum: [{ key: true, value: '正确' }, { key: false, value: '错误' }, { key: null, value: '待批改' }],
+        doCompletedTag: [{ key: false, value: 'info' }, { key: true, value: 'success' }]
+      }
+    },
+    examPaperAnswer: {
+      statusEnum: [{ key: 1, value: '待批改' }, { key: 2, value: '完成' }],
+      statusTag: [{ key: 1, value: 'warning' }, { key: 2, value: 'success' }]
     }
   }
 }

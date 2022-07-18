@@ -13,7 +13,7 @@ public class QuestionEditRequestVM {
     private Integer id;
     @NotNull
     private Integer questionType;
-    @NotNull
+//    @NotNull
     private Integer subjectId;
     @NotBlank
     private String title;
@@ -31,7 +31,7 @@ public class QuestionEditRequestVM {
     @NotBlank
     private String score;
 
-    @Range(min = 1, max = 5, message = "请选择题目难度")
+//    @Range(min = 1, max = 5, message = "请选择题目难度")
     private Integer difficult;
 
     private Integer itemOrder;

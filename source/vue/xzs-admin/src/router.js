@@ -89,6 +89,18 @@ const constantRoutes = [
         meta: { title: '试卷列表', noCache: true }
       },
       {
+        path: 'paper/examlist',
+        component: () => import('@/views/exam/paper/examlist'),
+        name: 'ExamPaperPageExamlist',
+        meta: { title: '试卷待批改列表', noCache: true }
+      },
+      {
+        path: 'paper/editexam',
+        component: () => import('@/views/exam/paper/editexam'),
+        name: 'ExamPaperPageEditexam',
+        meta: { title: '试卷批改', noCache: true }
+      },
+      {
         path: 'paper/edit',
         component: () => import('@/views/exam/paper/edit'),
         name: 'ExamPaperEdit',

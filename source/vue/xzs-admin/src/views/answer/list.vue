@@ -37,7 +37,7 @@
 
 import { mapGetters, mapState, mapActions } from 'vuex'
 import Pagination from '@/components/Pagination'
-import examPaperAnswerApi from '@/api/examPaperAnwser'
+import examPaperAnswerApi from '@/api/examPaperAnswer'
 
 export default {
   components: { Pagination },
